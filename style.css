@@ -138,8 +138,8 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* --------------------services------------- */
-#services{
+/* --------------------skills------------- */
+#skills{
     padding: 30px 0;
 }
 .services-list{
@@ -176,8 +176,8 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
-/* -------------portfolio----------------- */
-#portfolio{
+/* -------------projects----------------- */
+#projects{
     padding: 50px 0;
 }
 .work-list{
@@ -320,6 +320,15 @@ form .btn2{
 /* ----------------css for small screen------------- */
 nav .fas{
     display: none;
+}
+
+/* github calendar */
+#githubCal{
+    margin-bottom: 10%;
+    border-radius: 15px;
+}
+#githubCal>*{
+    padding: 10px;
 }
 
 @media only screen and (max-width: 600px){

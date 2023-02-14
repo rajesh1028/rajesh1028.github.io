@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,14 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0246833e7a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
+
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav id="nav-menu">
                 <img src="images/Rajesh-crop.png" class="logo" alt="logo">
                 <ul id="sidemenu">
                     <li><a href="#header" onclick="closemenu()">Home</a></li>
@@ -23,23 +27,25 @@
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>Web Designer</p>
-                <h1>Hi, I'm <span>Rajesh K</span><br> from India</h1>
+            <div class="header-text" id="home">
+                <p class="nav-link home">Web Designer</p>
+                <h1 id="user-detail-name" class="nav-link home">Hi, I'm <span>Rajesh K</span><br> from India</h1>
             </div>
         </div>
     </div>
     <!-- -----------------about------------------------ -->
-    <div id="about">
-        <div class="container">
+    <div id="about" class="about section">
+        <div class="container nav-link about">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images//RK.jpg" alt="user">
+                    <img class="home-img" src="images//RK.jpg" alt="user">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eius cumque, enim itaque perspiciatis dolor, sint id repellat laborum sequi autem libero est assumenda ex accusamus reprehenderit error facilis asperiores?</p>
-                    
+                    <p id="user-detail-intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eius cumque, enim itaque
+                        perspiciatis dolor, sint id repellat laborum sequi autem libero est assumenda ex accusamus
+                        reprehenderit error facilis asperiores?</p>
+
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -69,118 +75,144 @@
             </div>
         </div>
     </div>
-    <!-- -------------------------------services---------------- -->
-    <div id="services">
-        <div class="container">
+    <!-- -------------------------------skills---------------- -->
+    <div id="skills">
+        <div class="container nav-link skills">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div class="skills-card">
                     <i class="fas fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero tenetur nemo?</p>
+                    <h2 class="skills-card-name">Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
+                        tenetur nemo?</p>
                     <a href="#">Learn more</a>
                 </div>
-                <div>
-                    <i class="fas fa-sharp fa-solid fa-crop-simple"></i>                 
-                    <h2>UI Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero tenetur nemo?</p>
+                <div class="skills-card">
+                    <i class="fas fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2 class="skills-card-name">UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
+                        tenetur nemo?</p>
                     <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div class="skills-card">
                     <i class="fas fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero tenetur nemo?</p>
+                    <h2 class="skills-card-name">App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
+                        tenetur nemo?</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- -------------------portfolio--------------------------- -->
-    <div id="portfolio">
-        <div class="container">
+    <!-- -------------------projects--------------------------- -->
+    <div id="projects">
+        <div class="container nav-link projects">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
+                <div class="work project-card">
                     <img src="images/work-1.png" alt="work1">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda soluta eum.</p>
-                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda
+                            soluta eum.</p>
+                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work project-card">
                     <img src="images/work-2.png" alt="work1">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda soluta eum.</p>
-                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3 class="project-title">Music App</h3>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda
+                            soluta eum.</p>
+                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work project-card">
                     <img src="images/work-3.png" alt="work1">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda soluta eum.</p>
-                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3 class="project-title">Online Shopping App</h3>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda
+                            soluta eum.</p>
+                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                        <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-<!-- --------------contact----------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p> <i class="fas fa-solid fa-paper-plane"></i> rajeshkaruppusamy@gmail.com </p>
-                <p> <i class="fas fa-sharp fa-solid fa-phone"></i> +91 7708030202 </p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/rajesh1028"><i class="fas fa-brands fa-facebook"></i></a>
-                    <a href="http://instagram.com/rajeshkaruppusamy"><i class="fas fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/rajesh-k-b23188247/"><i class="fas fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/rajesh1028"><i class="fa-brands fa-github"></i></i></a>
 
+    <!-- ---------------------git calender------------------ -->
+    <section id="githubCal" class="container react-activity-calendar">
+        <div id="gitHead">
+            <h1 class="sub-title">GitHub Calendar</h1>
+        </div>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "rajesh1028");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "rajesh1028", { responsive: true });
+        </script>
+    </section>
+    <!-- --------------contact----------------- -->
+    <div id="contact">
+        <div class="container nav-link contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p id="contact-email"> <i class="fas fa-solid fa-paper-plane"></i> rajeshkaruppusamy@gmail.com </p>
+                    <p id="contact-phone"> <i class="fas fa-sharp fa-solid fa-phone"></i> +91 7708030202 </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/rajesh1028"><i class="fas fa-brands fa-facebook"></i></a>
+                        <a href="http://instagram.com/rajeshkaruppusamy"><i class="fas fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rajesh-k-b23188247/"><i id="contact-linkedin" class="fas fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rajesh1028"><i id="contact-github" class="fa-brands fa-github"></i></i></a>
+
+                    </div>
+                    <a id="resume" href="images/Rajesh_K_resume.pdf" download class="btn btn2 nav-link resume">Download CV</a>
                 </div>
-                <a id="resume" href="images/Rajesh_K_resume.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
+        <div class="copyright">
+            <p>Copyright @ Rajesh. Made by rajesh <i class="fas fa-solid fa-heart"></i> portfolio </p>
+        </div>
     </div>
-    <div class="copyright">
-        <p>Copyright @ Rajesh. Made by rajesh <i class="fas fa-solid fa-heart"></i> portfolio </p>
-    </div>
-</div>
 
 
 
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-        document.getElementById("resume").onclick=()=>{
-            window.open("https://drive.google.com/file/d/1n8LWOQA-yzu5sQAuMKWMl-o7C-pNYG7I/view?usp=share_link","_blank");
+        document.getElementById("resume").onclick = () => {
+            window.open("https://drive.google.com/file/d/1n8LWOQA-yzu5sQAuMKWMl-o7C-pNYG7I/view?usp=share_link", "_blank");
         }
 
     </script>
@@ -189,11 +221,11 @@
 
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        
-        function closemenu(){
+
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
 
@@ -201,19 +233,19 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbypBkYjbz8vvr5eF5DINkpGHvmqBrV0_BDpEoejgURlbv2YON9d1afyogQHtbg4x2ft/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg");
-    
+        const msg = document.getElementById("msg");
+
         form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent successfully";
-                setTimeout(()=>{
-                    msg.innerHTML="";
-                },5000)
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
         })
     </script>
 </body>
