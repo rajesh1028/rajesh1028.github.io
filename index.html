@@ -15,7 +15,7 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav id="nav-menu">
+            <nav id="nav-menu" style="position: static;">
                 <img src="images/Rajesh-crop.png" class="logo" alt="logo">
                 <ul id="sidemenu">
                     <li><a href="#header" onclick="closemenu()">Home</a></li>
@@ -42,7 +42,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p id="user-detail-intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eius cumque, enim itaque
+                    <p id="user-detail-intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eius
+                        cumque, enim itaque
                         perspiciatis dolor, sint id repellat laborum sequi autem libero est assumenda ex accusamus
                         reprehenderit error facilis asperiores?</p>
 
@@ -81,21 +82,21 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div class="skills-card">
-                    <i class="fas fa-solid fa-code"></i>
+                    <i class="fas fa-solid fa-code skills-card-img"></i>
                     <h2 class="skills-card-name">Web Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
                         tenetur nemo?</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
-                    <i class="fas fa-sharp fa-solid fa-crop-simple"></i>
+                    <i class="fas fa-sharp fa-solid fa-crop-simple skills-card-img"></i>
                     <h2 class="skills-card-name">UI Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
                         tenetur nemo?</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
-                    <i class="fas fa-brands fa-app-store"></i>
+                    <i class="fas fa-brands fa-app-store skills-card-img"></i>
                     <h2 class="skills-card-name">App Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
                         tenetur nemo?</p>
@@ -113,8 +114,11 @@
                     <img src="images/work-1.png" alt="work1">
                     <div class="layer">
                         <h3 class="project-title">Social Media App</h3>
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda
-                            soluta eum.</p>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab
+                            veniam. Quibusdam assumenda
+                            soluta eum.
+                        </p>
+                        <p class="project-tech-stack"></p>
                         <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
                         <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
@@ -123,8 +127,11 @@
                     <img src="images/work-2.png" alt="work1">
                     <div class="layer">
                         <h3 class="project-title">Music App</h3>
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda
-                            soluta eum.</p>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab
+                            veniam. Quibusdam assumenda
+                            soluta eum.
+                        </p>
+                        <p class="project-tech-stack"></p>
                         <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
                         <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
@@ -133,8 +140,11 @@
                     <img src="images/work-3.png" alt="work1">
                     <div class="layer">
                         <h3 class="project-title">Online Shopping App</h3>
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab veniam. Quibusdam assumenda
-                            soluta eum.</p>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab
+                            veniam. Quibusdam assumenda
+                            soluta eum.
+                        </p>
+                        <p class="project-tech-stack"></p>
                         <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
                         <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
@@ -145,21 +155,31 @@
     </div>
 
     <!-- ---------------------git calender------------------ -->
-    <section id="githubCal" class="container react-activity-calendar">
-        <div id="gitHead">
-            <h1 class="sub-title">GitHub Calendar</h1>
+    <div id="stats" class="container">
+        <h1 class="sub-title">Github Stats</h1>
+        <div>
+            <img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajesh1028&lans-count=4&show_icons=true&theme=dark"
+                alt="">
+
+            <div id="statsimg">
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=rajesh1028&show_icons=true&theme=dark"
+                    alt="">
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=rajesh1028&show_icons=true&theme=dark"
+                    alt="">
+            </div>
         </div>
-        <div class="calendar">
+    </div>
+    <div id="calendar" class="container">
+        <h1 class="sub-title calci">Github Calendar</h1>
+        <div class="react-activity-calendar calendar">
             <!-- Loading stuff -->
             Loading the data just for you.
         </div>
+    </div>
 
-        <script>
-            GitHubCalendar(".calendar", "rajesh1028");
-            // or enable responsive functionality
-            GitHubCalendar(".calendar", "rajesh1028", { responsive: true });
-        </script>
-    </section>
     <!-- --------------contact----------------- -->
     <div id="contact">
         <div class="container nav-link contact">
@@ -171,11 +191,15 @@
                     <div class="social-icons">
                         <a href="https://facebook.com/rajesh1028"><i class="fas fa-brands fa-facebook"></i></a>
                         <a href="http://instagram.com/rajeshkaruppusamy"><i class="fas fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/rajesh-k-b23188247/"><i id="contact-linkedin" class="fas fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/rajesh1028"><i id="contact-github" class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.linkedin.com/in/rajesh-k-b23188247/"><i id="contact-linkedin"
+                                class="fas fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rajesh1028"><i id="contact-github"
+                                class="fa-brands fa-github"></i></i></a>
 
                     </div>
-                    <a id="resume" href="images/Rajesh_K_resume.pdf" download class="btn btn2 nav-link resume">Download CV</a>
+                    <a id="resume-link-1" href="images/Rajesh_K_resume.pdf" download
+                        class="btn btn2 nav-link resume">Download
+                        CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -247,6 +271,13 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+
+        // git calendar
+        GitHubCalendar(".calendar", "rajesh1028", {
+            responsive: true,
+            global_stats: false,
+            tooltips: true,
+        });
     </script>
 </body>
 
