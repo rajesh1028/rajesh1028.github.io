@@ -462,16 +462,16 @@ nav .fas {
     border-radius: 15px;
 }
 
-#calendar>div{
+#calendar>div {
     margin-top: 5%;
     padding: 2%;
 }
 
-#stats{
+#stats {
     margin-top: -3%;
 }
 
-#stats>div{
+#stats>div {
     display: flex;
     margin: auto;
     margin: 6% 0;
@@ -490,11 +490,11 @@ nav .fas {
     transform: scale(1.01);
 }
 
-#statsimg img{
+#statsimg img {
     width: 87%;
 }
 
-#github-streak-stats{
+#github-streak-stats {
     margin-top: 1%;
 }
 
