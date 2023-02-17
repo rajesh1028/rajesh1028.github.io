@@ -445,6 +445,21 @@ nav .fas {
     .copyright {
         font-size: 14px;
     }
+
+    #stats>div {
+        display: flex;
+        margin: auto;
+    }
+
+    #stats #github-top-langs{
+        width: 50%;
+    }
+
+    #stats #statsimg img {
+        width: 100%;
+    }
+    
+    
 }
 
 #msg {
@@ -491,7 +506,7 @@ nav .fas {
 }
 
 #statsimg img {
-    width: 87%;
+    width: 88%;
 }
 
 #github-streak-stats {

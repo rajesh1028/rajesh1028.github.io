@@ -20,8 +20,8 @@
                 <ul id="sidemenu">
                     <li><a href="#header" onclick="closemenu()">Home</a></li>
                     <li><a href="#about" onclick="closemenu()">About</a></li>
-                    <li><a href="#services" onclick="closemenu()">Services</a></li>
-                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Portfolio</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -30,6 +30,7 @@
             <div class="header-text" id="home">
                 <p class="nav-link home">Web Designer</p>
                 <h1 id="user-detail-name" class="nav-link home">Hi, I'm <span>Rajesh K</span><br> from India</h1>
+                <a id="resume-link-2" href="images/Rajesh_K_resume.pdf" download class="btn btn2 nav-link resume">Download CV</a>
             </div>
         </div>
     </div>
@@ -42,34 +43,40 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p id="user-detail-intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eius
-                        cumque, enim itaque
-                        perspiciatis dolor, sint id repellat laborum sequi autem libero est assumenda ex accusamus
-                        reprehenderit error facilis asperiores?</p>
+                    <p id="user-detail-intro" style="text-align: justify;">A self-motivated and aspiring Full Stack Web
+                        Developer having 1200+ hours of coding experience
+                        from Masai School. Proficient in creating ready to
+                        use web application pages using both frontend and
+                        backend technologies. Looking for a challenging job
+                        opportunity in a growth oriented organisation that
+                        will showcase one's skills and enhances career and
+                        technical knowledge.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skill')">Soft Skills</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>UI</span><br>Designing interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>2022 - 2023</span><br>Full stack web Development at masai</li>
+                            <li><span>2019 - 2022</span><br>Bcom with Computer Applications from PSG</li>
+                            <li><span>2018 - 2019</span><br>HSC from KVM</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022-current</span><br>Designing Web interfaces</li>
-                            <li><span>2019-2022</span><br>Computer Applications</li>
+                            <li><span>2022 - current</span><br>Designing Web interfaces</li>
+                            <li><span>2019 - 2022</span><br>Computer Applications</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents" id="skill">
                         <ul>
-                            <li><span>2022</span><br>Full stack web Development at masai</li>
-                            <li><span>2022</span><br>Bcom with Computer Applications from PSG</li>
-                            <li><span>2019</span><br>HSC from KVM</li>
+                            <li><span>Time Management</span></li>
+                            <li>Problem-Solving</li>
+                            <li><span>Adaptability</span></li>
+                            <li>Teamwork</li>
+                            <li><span>Remote Work</span></li>
                         </ul>
                     </div>
                 </div>
@@ -79,27 +86,68 @@
     <!-- -------------------------------skills---------------- -->
     <div id="skills">
         <div class="container nav-link skills">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">My Skills</h1>
             <div class="services-list">
                 <div class="skills-card">
-                    <i class="fas fa-solid fa-code skills-card-img"></i>
-                    <h2 class="skills-card-name">Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
-                        tenetur nemo?</p>
+                    <img class="skills-card-img" src="./images/skills/socket.png" class="skills-card-img">
+                    <h2 class="skills-card-name">Socket</h2>
+                    <p></p>
                     <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
-                    <i class="fas fa-sharp fa-solid fa-crop-simple skills-card-img"></i>
-                    <h2 class="skills-card-name">UI Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
-                        tenetur nemo?</p>
+                    <img class="skills-card-img" src="./images/skills/javascript.png" class="skills-card-img">
+                    <h2 class="skills-card-name">Javascript</h2>
+                    <p></p>
                     <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
-                    <i class="fas fa-brands fa-app-store skills-card-img"></i>
-                    <h2 class="skills-card-name">App Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum quibusdam quae libero
-                        tenetur nemo?</p>
+                    <img class="skills-card-img" src="./images/skills/css-alt.png" class="skills-card-img">
+                    <h2 class="skills-card-name">CSS</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/aws-1.png" class="skills-card-img">
+                    <h2 class="skills-card-name">AWS</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- second row -->
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/mongodb.png" class="skills-card-img">
+                    <h2 class="skills-card-name">MongoDB</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/nodejs-96.png" class="skills-card-img">
+                    <h2 class="skills-card-name">Node.js</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/html-5.png" class="skills-card-img">
+                    <h2 class="skills-card-name">HTML</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/bootstrap.png" class="skills-card-img">
+                    <h2 class="skills-card-name">Bootstrap</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- third row -->
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/express-js-100.png" class="skills-card-img">
+                    <h2 class="skills-card-name">Express.js</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card-img" src="./images/skills/github.png" class="skills-card-img">
+                    <h2 class="skills-card-name">Github</h2>
+                    <p></p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -111,42 +159,33 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work project-card">
-                    <img src="images/work-1.png" alt="work1">
+                    <img src="images/azes.png" alt="work1">
                     <div class="layer">
-                        <h3 class="project-title">Social Media App</h3>
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab
-                            veniam. Quibusdam assumenda
-                            soluta eum.
-                        </p>
-                        <p class="project-tech-stack"></p>
-                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
-                        <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
+                        <h3 class="project-title">Explore City</h3>
+                        <p class="project-description">A clone of tripvillas where users can books various hotels across the country</p>
+                        <p class="project-tech-stack"> </p>
+                        <a href="https://lustrous-quokka-d5e991.netlify.app/"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                        <a href="https://github.com/rajesh1028/elegant-bed-6010"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
                 </div>
                 <div class="work project-card">
-                    <img src="images/work-2.png" alt="work1">
+                    <img src="images/explore-city.jpg" alt="work1">
                     <div class="layer">
-                        <h3 class="project-title">Music App</h3>
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab
-                            veniam. Quibusdam assumenda
-                            soluta eum.
-                        </p>
+                        <h3 class="project-title">AZES</h3>
+                        <p class="project-description">A clone of Asos website which is used to buy clothes online.</p>
                         <p class="project-tech-stack"></p>
-                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
-                        <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
+                        <a href="https://stalwart-jalebi-4adc0d.netlify.app/"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                        <a href="https://github.com/rajesh1028/awful-oatmeal-2681"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
                 </div>
                 <div class="work project-card">
-                    <img src="images/work-3.png" alt="work1">
+                    <img src="images/ZENith-zealot.png" alt="work1">
                     <div class="layer">
-                        <h3 class="project-title">Online Shopping App</h3>
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ab
-                            veniam. Quibusdam assumenda
-                            soluta eum.
-                        </p>
+                        <h3 class="project-title">Engage Bay</h3>
+                        <p class="project-description">A clone of engagebay website which deals with the customer relationship management of various organisations</p>
                         <p class="project-tech-stack"></p>
-                        <a href="#"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
-                        <a href="#"><i class="fa-brands fa-github project-github-link"></i></i></a>
+                        <a href="https://chic-sunflower-e9cd44.netlify.app/"><i class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                        <a href="https://github.com/rajesh1028/screeching-board-8722"><i class="fa-brands fa-github project-github-link"></i></i></a>
                     </div>
                 </div>
             </div>
@@ -236,7 +275,11 @@
         }
 
         document.getElementById("resume-link-1").onclick = () => {
-            window.open("https://drive.google.com/file/d/1n8LWOQA-yzu5sQAuMKWMl-o7C-pNYG7I/view?usp=share_link", "_blank");
+            window.open("https://drive.google.com/file/d/1uubUjSb4J3Cwe0_4f-yH0gB7iyb2nJ1J/view?usp=share_link", "_blank");
+        }
+
+        document.getElementById("resume-link-2").onclick = () => {
+            window.open("https://drive.google.com/file/d/1uubUjSb4J3Cwe0_4f-yH0gB7iyb2nJ1J/view?usp=share_link", "_blank");
         }
 
     </script>
