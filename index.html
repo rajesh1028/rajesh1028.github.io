@@ -31,7 +31,7 @@
                 <div class="header-text" id="home">
                     <p class="nav-link hme">Web Designer</p>
                     <h1 id="user-detail-name">Hi, I'm <span>Rajesh K</span><br> Full Stack Web Developer</h1>
-                    <a id="resume-button-1" href="resume/Rajesh_K_Resume.pdf" target="_blank" download=""
+                    <a id="resume-link-2" href="resume/Rajesh_K_Resume.pdf" target="_blank" download=""
                         class="btn btn2 nav-link resume">Download CV</a>
                 </div>
             </nav>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div>
-                <a href="./resume/Rajesh_K_Resume.pdf" class="btn btn2" id="resume-button-2" download="">Download CV</a>
+                <button class="btn btn2" id="resume-button-1">Download CV</button>
             </div>
         </div>
     </div>
@@ -265,9 +265,7 @@
                                 class="fa-brands fa-github"></i></i></a>
 
                     </div>
-                    <!-- <a id="resume-link-2" href="resume/Rajesh_K_Resume.pdf" target="_blank" download
-                        class="btn btn2">Download
-                        CV</a> -->
+                    <button class="btn btn2" id="resume-button-2">Download CV</button>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -315,9 +313,9 @@
             window.open("https://drive.google.com/file/d/1uubUjSb4J3Cwe0_4f-yH0gB7iyb2nJ1J/view?usp=share_link", "_blank");
         }
 
-        // document.getElementById("resume-link-2").onclick = () => {
-        //     window.open("https://drive.google.com/file/d/1uubUjSb4J3Cwe0_4f-yH0gB7iyb2nJ1J/view?usp=share_link", "_blank");
-        // }
+        document.getElementById("resume-link-2").onclick = () => {
+            window.open("https://drive.google.com/file/d/1uubUjSb4J3Cwe0_4f-yH0gB7iyb2nJ1J/view?usp=share_link", "_blank");
+        }
 
     </script>
 
