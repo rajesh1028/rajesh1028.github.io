@@ -339,7 +339,8 @@
         const msg = document.getElementById("msg");
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
+            msg.innerHTML = "Message sending";
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Message sent successfully";
@@ -348,7 +349,13 @@
                     }, 5000)
                     form.reset();
                 })
-                .catch(error => console.error('Error!', error.message))
+                .catch(error => {
+                    msg.innerHTML="Failed to send message";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    console.error('Error!', error.message)
+                })
         })
 
         // git calendar
