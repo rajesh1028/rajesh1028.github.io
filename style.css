@@ -106,6 +106,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
+    margin-bottom: 2%;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
@@ -367,6 +368,12 @@ form .btn2 {
     color: #ff004f;
 }
 
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
 /* ----------------css for small screen------------- */
 nav .fas {
     display: none;
@@ -446,74 +453,45 @@ nav .fas {
         font-size: 14px;
     }
 
-    #stats>div {
-        display: flex;
-        margin: auto;
-    }
-
-    #stats #github-top-langs{
-        width: 50%;
-    }
-
-    #stats #statsimg img {
-        width: 100%;
-    }
-    
-    
-}
-
-#msg {
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
 }
 
 
-/* github calendar */
-
-/* github calendar */
-#calendar {
-    margin-bottom: 8%;
-    border-radius: 15px;
-}
-
-#calendar>div {
-    margin-top: 5%;
-    padding: 2%;
-}
-
-#stats {
-    margin-top: -3%;
-}
-
+/*---------------- GITHUB --------------*/
 #stats>div {
-    display: flex;
+    width: 90%;
     margin: auto;
-    margin: 6% 0;
+    display: flex;
+}
+
+#stats>div>img {
+    height: 100%;
 }
 
 #stats img {
+    width: 52%;
     transition: transform .2s;
+    margin-left: 20%;
 }
 
-#github-top-langs {
-    width: 80%;
-    margin-right: 2%;
+#statsimg>img {
+    width: 65%;
+    margin-left: 5%;
 }
 
 #stats img:hover {
     transform: scale(1.01);
 }
 
-#statsimg img {
-    width: 88%;
+.calendar {
+    width: 90%;
+    padding: 1%;
 }
 
-#github-streak-stats {
-    margin-top: 1%;
+#calendar h2 {
+    margin: 35px 0 20px 0;
 }
 
-/* @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     #stats>div {
         flex-direction: column;
     }
@@ -526,51 +504,4 @@ nav .fas {
     #statsimg>img {
         margin-left: 17%;
     }
-} */
-
-
-/* github area */
-
-#stats>div{
-    width: 90%;
-    margin: auto;
-    display: flex;
-  }
-  #stats>div>img{
-    height: 100%;
-  }
-  #stats img{
-    width: 52%;
-    transition:transform .2s;
-    margin-left: 20%;
-  }
-  #statsimg>img{
-  width: 65%;
-  margin-left: 5%;
-  }
-  #stats img:hover{
-    transform: scale(1.01);
-  }
-  
-  .calendar{
-    width: 90%;
-    padding: 1%;
-  }
-  
-  #calendar h2{
-    margin: 35px 0 20px 0;
-  }
-  
-  @media only screen and (max-width: 900px){
-    #stats>div{
-      flex-direction: column;
-      }
-  
-    #stats>div>img{
-      margin-left: 23%;
-      margin-bottom: 3%;
-    }
-    #statsimg>img{
-      margin-left: 17%;
-    }
-  }
+}
