@@ -106,7 +106,6 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-    margin-bottom: 2%;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
@@ -290,6 +289,11 @@ nav ul li a:hover::after {
 }
 
 /* ------------contact-------------- */
+
+#contact {
+    margin-top: 5%;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -364,14 +368,14 @@ form .btn2 {
     margin-top: 20px;
 }
 
-.copyright i {
-    color: #ff004f;
-}
-
 #msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+.copyright i {
+    color: #ff004f;
 }
 
 /* ----------------css for small screen------------- */
@@ -455,8 +459,16 @@ nav .fas {
 
 }
 
-
 /*---------------- GITHUB --------------*/
+
+#stats {
+    margin-bottom: 5%;
+}
+
+#stats .sub-title {
+    margin-bottom: 2%;
+}
+
 #stats>div {
     width: 90%;
     margin: auto;
@@ -487,8 +499,8 @@ nav .fas {
     padding: 1%;
 }
 
-#calendar h2 {
-    margin: 35px 0 20px 0;
+#calendar h1 {
+    margin: 2% 0;
 }
 
 @media only screen and (max-width: 900px) {
