@@ -31,6 +31,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    width: 85%;
+    background-color: #080808;
+    margin-top: -1.5%;
+    border-radius: 5px;
+    height: 80px;
 }
 
 .logo {
@@ -63,6 +69,14 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+nav span {
+    color: #ff004f;
+}
+
+nav h1 {
+    font-size: calc(2 * (1.5vh + 1.1vw));
 }
 
 .header-text {
@@ -397,6 +411,11 @@ nav .fas {
         font-size: 30px;
     }
 
+    nav {
+        height: 50px;
+        margin-top: -3%;
+    }
+
     nav .fas {
         display: block;
         font-size: 25px;
@@ -504,6 +523,12 @@ nav .fas {
 }
 
 @media only screen and (max-width: 900px) {
+
+    nav {
+        height: 80px;
+        margin-top: -2.5%;
+    }
+
     #stats>div {
         flex-direction: column;
     }
