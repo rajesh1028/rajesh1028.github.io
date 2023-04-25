@@ -14,9 +14,25 @@
 
 <body>
     <div id="header">
-        <div class="container">
-            <nav id="nav-menu">
+        <nav class="navbar" id="nav-menu">
+            <div class="max-width">
                 <h1><span>R</span>ajesh.</h1>
+                <ul class="menu" id="sidemenu">
+                    <li><a href="#home" class="menu-btn nav-link home" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" class="menu-btn nav-link about" onclick="closemenu()">About</a></li>
+                    <li><a href="#skills" class="menu-btn nav-link skills" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#projects" class="menu-btn nav-link projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" class="menu-btn nav-link contact" onclick="closemenu()">Contact</a></li>
+                    <li><a href="Rajesh_K_Resume.pdf" class="menu-btn nav-link resume" id="resume-link-1"
+                            target="_blank" download="">Resume</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <div class="container" id="home">
+            <!-- <nav id="nav-menu">
+                
                 <ul id="sidemenu">
                     <li><a href="#home" class="nav-link home" onclick="closemenu()">Home</a></li>
                     <li><a href="#about" class="nav-link about" onclick="closemenu()">About</a></li>
@@ -28,8 +44,9 @@
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text" id="home">
+            </nav> -->
+
+            <div class="header-text">
                 <p class="nav-link hme">Web Designer</p>
                 <h1 id="user-detail-name">Hi, I'm <span>Rajesh K</span><br> Full Stack Web Developer</h1>
                 <a id="resume-link-2" href="Rajesh_K_Resume.pdf" target="_blank" download=""
@@ -98,63 +115,53 @@
                     <img class="skills-card-img" src="./images/skills/socket.png" class="skills-card-img">
                     <h2 class="skills-card-name">Socket</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/javascript.png" class="skills-card-img">
                     <h2 class="skills-card-name">Javascript</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/css-alt.png" class="skills-card-img">
                     <h2 class="skills-card-name">CSS</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/aws-1.png" class="skills-card-img">
                     <h2 class="skills-card-name">AWS</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <!-- second row -->
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/mongodb.png" class="skills-card-img">
                     <h2 class="skills-card-name">MongoDB</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/nodejs-96.png" class="skills-card-img">
                     <h2 class="skills-card-name">Node.js</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/html-5.png" class="skills-card-img">
                     <h2 class="skills-card-name">HTML</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/bootstrap.png" class="skills-card-img">
                     <h2 class="skills-card-name">Bootstrap</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <!-- third row -->
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/express-js-100.png" class="skills-card-img">
                     <h2 class="skills-card-name">Express.js</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div class="skills-card">
                     <img class="skills-card-img" src="./images/skills/github.png" class="skills-card-img">
                     <h2 class="skills-card-name">Github</h2>
                     <p></p>
-                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -164,58 +171,58 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work project-card">
+                <div class="project1 project-card">
                     <img src="images/BODYCARE LTD.png" alt="work1">
-                    <div class="layer">
+                    <div class="box">
                         <h3 class="project-title">Seoux</h3>
                         <p class="project-description">A website where users can book appointments with beauty service
                             providers, and browse availability of timeslots and pricing.</p>
                         <p class="project-tech-stack">JavaScript | HTML | CSS | NodeJs | MongoDB</p>
                         <a href="https://sweet-biscochitos-2fe8b6.netlify.app/" target="_blank"><i
-                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i>Live</a>
                         <a href="https://github.com/rajesh1028/seoux" target="_blank"><i
-                                class="fa-brands fa-github project-github-link"></i></i></a>
+                                class="fa-brands fa-github project-github-link"></i></i>Git</a>
                     </div>
                 </div>
-                <div class="work project-card">
+                <div class="project1 project-card">
                     <img src="images/explore-city.jpg" alt="work1">
-                    <div class="layer">
+                    <div class="box">
                         <h3 class="project-title">Explore City</h3>
                         <p class="project-description">A clone of tripvillas where users can books various hotels across
                             the country</p>
                         <p class="project-tech-stack">JavaScript | HTML | CSS | Express | MongoDB | Git</p>
                         <a href="https://lustrous-quokka-d5e991.netlify.app/" target="_blank"><i
-                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i>Live</a>
                         <a href="https://github.com/rajesh1028/Explore-city" target="_blank"><i
-                                class="fa-brands fa-github project-github-link"></i></i></a>
+                                class="fa-brands fa-github project-github-link"></i></i>Git</a>
                     </div>
                 </div>
-                <div class="work project-card">
+                <div class="project1 project-card">
                     <img src="images/azes.png" alt="work1">
-                    <div class="layer">
+                    <div class="box">
                         <h3 class="project-title">AZES</h3>
                         <p class="project-description">A clone of Asos website which is used to buy clothes online.</p>
                         <p class="project-tech-stack">JavaScript | HTML | CSS | Express | MongoDB | Git</p>
                         <a href="https://azes-com.netlify.app/" target="_blank"><i
-                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i>Live</a>
                         <a href="https://github.com/rajesh1028/asos-clone" target="_blank"><i
-                                class="fa-brands fa-github project-github-link"></i></i></a>
+                                class="fa-brands fa-github project-github-link"></i></i>Git</a>
                     </div>
                 </div>
-                <div class="work project-card">
+                <div class="project1 project-card">
                     <img src="images/ZENith-zealot.png" alt="work1">
-                    <div class="layer">
+                    <div class="box">
                         <h3 class="project-title">Engage Bay</h3>
                         <p class="project-description">A clone of engagebay website which deals with the customer
                             relationship management of various organisations</p>
                         <p class="project-tech-stack">JavaScript | HTML | CSS | Git</p>
                         <a href="https://zenith-com.netlify.app/" target="_blank"><i
-                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
+                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i>Live</a>
                         <a href="https://github.com/rajesh1028/engageBay-clone" target="_blank"><i
-                                class="fa-brands fa-github project-github-link"></i></i></a>
+                                class="fa-brands fa-github project-github-link"></i></i>Git</a>
                     </div>
                 </div>
-                <div class="work project-card">
+                <!-- <div class="work project-card">
                     <img src="images/Chatify.png" alt="work">
                     <div class="layer">
                         <h3 class="project-title">Chatify</h3>
@@ -227,6 +234,20 @@
                                 class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i></a>
                         <a href="https://github.com/rajesh1028/whatsapp-clone" target="_blank"><i
                                 class="fa-brands fa-github project-github-link"></i></i></a>
+                    </div>
+                </div> -->
+                <div class="project1 project-card">
+                    <img src="images/Chatify.png" alt="work">
+                    <div class="box">
+                        <h3 class="project-title"> Chatify</h3>
+                        <p class="project-description"> A real-time chatting application where multiple users can
+                            communicate between them.</p>
+                        <p class="project-tech-stack"> JavaScript | HTML | CSS | Express | MongoDB | NodeJs | socket.io
+                        </p>
+                        <a href="https://chatify-com.netlify.app/" target="_blank"><i
+                                class="fas fa-solid fa-arrow-up-right-from-square project-deployed-link"></i>Live</a>
+                        <a href="https://github.com/rajesh1028/whatsapp-clone" target="_blank"><i
+                                class="fa-brands fa-github project-github-link"></i></i>Git</a>
                     </div>
                 </div>
             </div>
@@ -242,14 +263,14 @@
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajesh1028&lans-count=4&show_icons=true&theme=dark"
                 alt="">
 
-            <div id="statsimg">
+            <!-- <div id="statsimg"> -->
                 <img id="github-stats-card"
                     src="https://github-readme-stats.vercel.app/api?username=rajesh1028&show_icons=true&theme=dark"
                     alt="">
                 <img id="github-streak-stats"
                     src="https://github-readme-streak-stats.herokuapp.com?user=rajesh1028&show_icons=true&theme=dark"
                     alt="">
-            </div>
+            <!-- </div> -->
         </div>
     </div>
     <div id="calendar" class="container">
@@ -317,19 +338,19 @@
 
 
         document.getElementById("resume-button-1").onclick = () => {
-            window.open("https://drive.google.com/file/d/1FzyP9BpL3YQwUQUz9OlgLItZYzKyB0KC/view?usp=share_link", "_blank");
+            window.open("Rajesh_K_Resume.pdf", "_blank");
         }
 
         document.getElementById("resume-button-2").onclick = () => {
-            window.open("https://drive.google.com/file/d/1FzyP9BpL3YQwUQUz9OlgLItZYzKyB0KC/view?usp=share_link", "_blank");
+            window.open("Rajesh_K_Resume.pdf", "_blank");
         }
 
         document.getElementById("resume-link-1").onclick = () => {
-            window.open("https://drive.google.com/file/d/1FzyP9BpL3YQwUQUz9OlgLItZYzKyB0KC/view?usp=share_link", "_blank");
+            window.open("Rajesh_K_Resume.pdf", "_blank");
         }
 
         document.getElementById("resume-link-2").onclick = () => {
-            window.open("https://drive.google.com/file/d/1FzyP9BpL3YQwUQUz9OlgLItZYzKyB0KC/view?usp=share_link", "_blank");
+            window.open("Rajesh_K_Resume.pdf", "_blank");
         }
 
     </script>

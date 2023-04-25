@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
@@ -15,8 +17,8 @@ body {
 }
 
 #header {
-    width: 100%;
-    height: 100vh;
+    /* width: 100%;
+    height: 100vh; */
     /* background-image: url(images/background.png); */
     background-size: cover;
     background-position: center;
@@ -26,7 +28,7 @@ body {
     padding: 10px 10%;
 }
 
-nav {
+/* nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +43,70 @@ nav {
 
 .logo {
     width: 140px;
+} */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+    background-color: #080808;
+    height: fit-content;
 }
+
+.navbar.sticky {
+    padding: 15px 0;
+    /* background: #edbe14; */
+    background: #00a2e2;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: #00a2e2;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #00a2e2;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
 
 nav ul li {
     display: inline-block;
@@ -97,7 +162,7 @@ nav h1 {
 #about {
     padding: 80px 0;
     color: #ababab;
-    ;
+    margin-top: -2%;
 }
 
 .row {
@@ -403,20 +468,15 @@ nav .fas {
     } */
 
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 40%;
+        font-size: 20px;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
-    nav {
-        height: 50px;
-        margin-top: -3%;
-    }
-
-    nav .fas {
+    /* nav .fas {
         display: block;
         font-size: 25px;
     }
@@ -443,6 +503,10 @@ nav .fas {
         top: 25px;
         left: 25px;
         cursor: pointer;
+    } */
+
+    #about {
+        top: -20%;
     }
 
     .sub-title {
@@ -480,7 +544,20 @@ nav .fas {
 
 /*---------------- GITHUB --------------*/
 
-#stats {
+#stats div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#stats div img {
+    width: 50%;
+    margin: auto;
+}
+
+/* #stats {
     margin-bottom: 5%;
 }
 
@@ -491,7 +568,6 @@ nav .fas {
 #stats>div {
     width: 90%;
     margin: auto;
-    display: flex;
 }
 
 #stats>div>img {
@@ -499,7 +575,7 @@ nav .fas {
 }
 
 #stats img {
-    width: 52%;
+    width: 40%;
     transition: transform .2s;
     margin-left: 20%;
 }
@@ -520,13 +596,46 @@ nav .fas {
 
 #calendar h1 {
     margin: 2% 0;
-}
+} */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 940px) {
 
-    nav {
-        height: 80px;
-        margin-top: -2.5%;
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #about {
+        margin-top: -15%;
     }
 
     #stats>div {
@@ -541,4 +650,56 @@ nav .fas {
     #statsimg>img {
         margin-left: 17%;
     }
+}
+
+/* projects */
+
+.project1 img {
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 15px;
+    background: #262626;
+    border-radius: 15px;
+    color: #fff;
+    transition: all 0.25s ease;
+    padding: 5%;
+}
+
+.project1 * {
+    padding: 2%;
+}
+
+.project1 span {
+    color: #ff004f;
+}
+
+.project1:hover {
+    transform: scale(1.05);
+}
+
+.project1 h3 {
+    color: #f02d6b;
+}
+
+.project1 .project-tech-stack{
+    color: gray;
+}
+
+.project1 a{
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+}
+
+.project1 a:hover{
+    background-color: #ff004f;
 }
