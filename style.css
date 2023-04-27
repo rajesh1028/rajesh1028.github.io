@@ -544,17 +544,16 @@ nav .fas {
 
 /*---------------- GITHUB --------------*/
 
-#stats div {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+#stats>div {
+    /* border: 1px solid greenyellow; */
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
 }
 
 #stats div img {
-    width: 50%;
-    margin: auto;
+    width: 100%;
 }
 
 /* #stats {
@@ -639,6 +638,12 @@ nav .fas {
     }
 
     #stats>div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    /* #stats>div {
         flex-direction: column;
     }
 
@@ -649,7 +654,7 @@ nav .fas {
 
     #statsimg>img {
         margin-left: 17%;
-    }
+    } */
 }
 
 /* projects */
