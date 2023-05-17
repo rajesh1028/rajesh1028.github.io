@@ -597,7 +597,7 @@ nav .fas {
     margin: 2% 0;
 } */
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1075px) {
 
     nav .fas {
         display: block;
@@ -634,7 +634,7 @@ nav .fas {
     }
 
     #about {
-        margin-top: -15%;
+        margin-top: -10%;
     }
 
     #stats>div {
